@@ -8,7 +8,7 @@ console.log(naame, city, age);
 
 // observe the result
 
-let x = 5;
+// let x = 5;
 let x= 10; // output will be x has already been declared
 
 // guess the output
