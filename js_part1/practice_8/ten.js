@@ -1,4 +1,5 @@
 // Use a variable as a key using computed properties
+
 // now to add this role variable in our object 
 // we do computed properties which is this []
 
@@ -11,7 +12,7 @@ let student = {
     address: {
         country: "Nepal",
         city: "Pokhara",
-        province: [province], // now value of province will come here but in array form
+        province: province, // for values we can directly use the variable name
         location: {
             lat: 1,
             long:10,
