@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event delegation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button data-add-box>Create Box</button>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+        <div class="box"> 
+            Outer will not be clicked since it not the part of the parent div and outside it
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

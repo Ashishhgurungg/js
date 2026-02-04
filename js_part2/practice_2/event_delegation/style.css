@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, 50px);
+    margin: 0.5rem;
+}
+
+.box {
+    aspect-ratio: 1/1;
+    width: 50%;
+    border: 2px solid black;
+}
+
+.box.clicked {
+    background-color: black;
+}
