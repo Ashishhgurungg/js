@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+
+        
+        <form id="form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <!-- Error message placeholder -->
+                <span class="error-message" id="userError">
+                    Invalid username
+                </span>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <span class="error-message" id="passwordError">
+                    Use at least 8 characters with uppercase, lowercase, and a number.
+                </span>
+                <br>
+            </div>
+
+            <button type="submit">Login</button>
+            <span id="success">
+            </span>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
