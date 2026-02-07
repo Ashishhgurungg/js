@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+#circle{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 200px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+}
+
+body{
+    background-color: #3b0e0e;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+
+}
+
+#up, #down{
+    font-size: 20px;
+    border-width: 2px;
+    border-top: 2px solid #3b0e0e;
+    border-bottom: 2px solid #3b0e0e;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #3b0e0e;
+    cursor: pointer;
+}
