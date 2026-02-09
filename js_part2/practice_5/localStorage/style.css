@@ -1,0 +1,37 @@
+/* 1. Default (Light Mode) Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #181818;
+  --btn-bg: #eeeeee;
+  --btn-text: #181818;
+}
+
+/* 2. Dark Mode Overrides */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --btn-bg: #333333;
+  --btn-text: #ffffff;
+}
+
+/* 3. Applying the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+}
