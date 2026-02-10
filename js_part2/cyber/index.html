@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Register</h2>
+
+    <form id="form" novalidate>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create password">
+
+            <ul class="password-rules">
+                <li id="lower">❌ At least one lowercase letter</li>
+                <li id="upper">❌ At least one uppercase letter</li>
+                <li id="number">❌ At least one number</li>
+                <li id="length">❌ At least 8 characters</li>
+            </ul>
+
+            <div id="strength" class="strength"></div>
+        </div>
+
+        <button type="submit">Register</button>
+        <span id="success"></span>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
