@@ -6,6 +6,8 @@ const userError = document.querySelector("#userError");
 const passwordError = document.querySelector("#passwordError");
 const success = document.querySelector("#success");
 
+username.value = localStorage.getItem("username");
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let isValid = true;
@@ -31,5 +33,6 @@ form.addEventListener("submit", (e) => {
 
     if (isValid) {
         success.textContent = "All valid";
+        localStorage.setItem("username", username.value);
     }
 })
