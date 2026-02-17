@@ -29,7 +29,12 @@ updateDashboard(); // Run immediately so it doesn't wait 1 second to start
 
 const input = document.querySelector("#goalInput");
 const button = document.querySelector("#setGoalBtn");
-const paragraph = document.getElementById("displayGoal")
+const paragraph = document.getElementById("displayGoal");
+
+if (localStorage.getItem("goal")) {
+    paragraph.textContent = localStorage.getItem("goal");
+    
+}
 
 // 2. Add a 'click' event listener to the button
 
@@ -38,6 +43,7 @@ button.addEventListener("click", (e) => {
     const finalValue = input.value.trim();
     if (finalValue !== "") {   
         paragraph.textContent = finalValue;
+        localStorage.setItem("goal", finalValue);
 
     }
     else {
