@@ -32,8 +32,8 @@ const wornClothes = (user, clothes) => {
     });
 }
 
-wakeup()
-    .then((user) => eatBreakfast(user))
+wakeup("ashish")
+    .then((user) => eatBreakfast(user))//resolve has user so user is passed , we did not write then(resolve) because then(user) will be convenient to read
     .then((breakfast) => ready('John', breakfast))
     .then((clothes) => wornClothes('John', clothes))
     .then((message) => console.log(message));
