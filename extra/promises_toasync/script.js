@@ -32,8 +32,14 @@ const wornClothes = (user, clothes) => {
     });
 }
 
-wakeup("ashish")
-    .then((user) => eatBreakfast(user))//resolve has user so user is passed , we did not write then(resolve) because then(user) will be convenient to read
-    .then((breakfast) => ready('John', breakfast)) // above eatbreakfast function returns breakfast so the cofee array is saved in that
-    .then((clothes) => wornClothes('John', clothes)) // ready executes , does it work and retuns clothes array which is passed to wornClothes function
-    .then((message) => console.log(message));
+(async function () {
+    try {
+        const user = await wakeup("ashish"); //user variable has ashish now because resolve returns user
+        const breakfast = await eatBreakfast(user); // break fast variable has coffee,eggs so on because resolve returns it
+        const clothes = await ready(user, breakfast); // in arguement we are passing the exact variable , user has ashish and breakfast has coffee etc
+        const message = await wornClothes(user, clothes); // at the end relove returns a message 
+        console.log(message);// we console the last message
+    } catch (error) {
+        console.log(error);
+    }
+})();
