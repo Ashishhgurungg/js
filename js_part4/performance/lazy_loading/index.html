@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Lazy Loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Welcome to the Gallery</h1>
+        <img src="https://picsum.photos/id/10/1200/600" alt="Hero Image" class="hero-img">
+    </section>
+
+    <section class="gallery">
+        <div class="image-container">
+            <img data-src="https://picsum.photos/id/20/800/450" alt="Gallery 1" class="lazy-load">
+        </div>
+        <div class="image-container">
+            <img data-src="https://picsum.photos/id/30/800/450" alt="Gallery 2" class="lazy-load">
+        </div>
+        <div class="image-container">
+            <img data-src="https://picsum.photos/id/40/800/450" alt="Gallery 3" class="lazy-load">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
