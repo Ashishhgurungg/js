@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.child{
+    background-color: brown;
+    height: 40px;
+    width: 100%;
+    border-color: black;
+    border-radius: 3px;
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+    /* margin: 5px; */ 
+    /* we don't need margin because we are usin gap in parent */
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-weight: bold; */
+    flex-shrink: 1;
+
+
+
+}
+
+.type{
+     background-color: brown;
+    height: 40px;
+    width: 75px;
+    border-color: black;
+    border-radius: 3px;
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+    /* margin: 5px; */ 
+    /* we don't need margin because we are usin gap in parent */
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-weight: bold; */
+    flex-shrink: 1;
+}
+
+.parent {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column-reverse;
+    justify-content:center;  /* this is for x axis or main axis */
+    gap: 10px;
+    align-items:center; /* this is for y axis or cross axis */
+    height: 650px;
+}
