@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(47, 70, 170);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    border: solid rgb(218, 212, 212);
+    padding: 100px;
+    border-radius: 55px;
+    background-color: rgb(47, 70, 170);
+    color: aliceblue;
+    text-align: center;
+}
+
+
+.container:hover{
+    background-color: rgb(53, 53, 160);
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid rgb(218, 212, 212);
+    background-color: rgb(47, 70, 170);
+    color: aliceblue;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.timer{
+    padding: 10px;
+}
