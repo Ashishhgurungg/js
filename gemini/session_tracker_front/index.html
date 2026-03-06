@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Session Dashboard</title>
+    <meta name="csrf-token" content="mock-token-12345">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container" class="container">
+        <header>
+            <h1>Security Monitor</h1>
+            <div id="clock">00:00:00</div>
+        </header>
+
+        <main class="dashboard">
+            <div class="status-card">
+                <h3>Session Status</h3>
+                <p id="status-text">Active</p>
+                <div class="progress-bar">
+                    <div id="idle-progress"></div>
+                </div>
+                <small>Auto-logout in 30s of inactivity</small>
+            </div>
+            
+            <button id="manual-logout">Manual Logout</button>
+        </main>
+    </div>
+
+    <div id="lock-screen" class="overlay hidden">
+        <div class="lock-card">
+            <h2>Session Expired</h2>
+            <p>You have been logged out for security.</p>
+            <button onclick="location.reload()">Re-authenticate</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
