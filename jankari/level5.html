@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JankariTech riddle level 5</title>
+<style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        user-select: none;
+    }
+
+    body {
+        background-color: rgb(31, 31, 31);
+    }
+
+    #btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 4rem;
+        width: 10rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 1px 1px 5px black;
+        background-color: white;
+        padding: 15px;
+        text-transform: capitalize;
+    }
+
+</style>
+</head>
+<body>
+
+    
+<div id="fullover"
+    style="
+    position: fixed;
+    inset: 0; /* top:0; left:0; right:0; bottom:0 */
+    z-index: 1040;
+    background: rgb(255, 255, 255, 0.85);
+    backdrop-filter: blur(2px);
+    transition: opacity 0.5s;
+    opacity: 1; visibility: visible;
+    /* (A3) CENTER CONTENT */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;">
+
+    <div class="popup-content" style="
+        border-radius: 12px;
+        padding: 50px;
+        max-width: 568px;
+        width: 90%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #222;
+    ">
+    <h3>Congratulation, you have solved level 4!</h3>
+        Deepen your understanding about the challenges in level 4:
+        <hr style="border: 1px solid #000; margin: 10px;">
+    JSON is a popular way to encode, transport and store data.
+        <br>
+    Here a tutorial where you can learn more about it: <a href="https://www.w3schools.com/js/js_json.asp" target="_blank">https://www.w3schools.com/js/js_json.asp</a>
+    
+        <div style="font-weight: bold; font-size: 20px;">
+            <br>REMEMBER TO COME BACK HERE TO SOLVE THE NEXT LEVEL!
+        </div>
+        <hr style="border: 1px solid #000; margin: 10px;">
+        <button onclick="document.getElementById('fullover').style.opacity=0; document.getElementById('fullover').style.visibility='hidden';"
+                style="font-size: 18px;
+                cursor: pointer;
+                margin-top: 20px;
+                padding: 6px 10px;
+                border: none;
+                background-color: #194422;
+                color: white;">
+            I am ready. Take me to level 5 ⬆️
+        </button>
+    </div>
+</div>
+<button id='btn' style="width: auto;">Click Me to get to the next level &#129315;</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+<script id="rendered-js">
+    const t=document.getElementById("btn");
+    const mm=(e,p,pc)=>anime({targets:e,[p]:`${ pc }px`,easing:"easeOutCirc"});
+    ["mouseover"].forEach(function(el){t.addEventListener(el,function(ev){const top=gr(window.innerHeight-this.offsetHeight);
+    const left=gr(window.innerWidth-this.offsetWidth);
+    const height=gr(100);
+    mm(this,"left",left).play();
+    mm(this,"top",top).play();
+    mm(this,"height",height).play();
+    if(ev.type==="click"){let m=atob("ZGVjb2RlIHRoaXM6Cg==");
+    m+="ON2GS3DMEBXG65BAHIWSQIDBEBRW6ZDFEBUW443JMRSSAYJAMNXWIZJ7EBQUQURQMNCG65SMGNFHAWSHKJZVUUZVOFMVONLSLFMEU4CMNZJGYWJSM43E6RCBO5GUGOBTLJCFCMCOIRTTATKDGA2VUR2NO5GFIRLYLJCEK5CZNJETATSTGAYVU3K2NNMTEVJTJZDVU2C2IRES6YKXKE4VSMRRORNG4TJTMFCEM5C2PJETCYJTLJXE2RCGORGUQTLYLJWXQ43CINNG2YKYJJ5GIRRZOVMVOMLMKBJVU42ZLBHDAWBSGVUGEV2VHE====== ";
+    alert(m)}})});
+    const gr=v=>{return Math.floor(Math.random()*(v+1))};
+
+</script>
+</body>
+</html>
