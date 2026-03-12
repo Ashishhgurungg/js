@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(255, 0%, 0%);
+    color: hsl(0, 100%, 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 20px 25px;
+    border: solid white;
+    
+}
+
+.nav1 img{
+    height: 95%;
+    width: 70%;
+}
+
+.nav2{
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
