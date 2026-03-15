@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+}
+body{
+     overflow-x:hidden;
+}
+
+#pageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#page1 {
+  height: 100vh;
+  width: 99vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+#page2 h1 {
+  font-size: 20vw;
+  color: rgb(128, 142, 228);
+  background-color: black;
+  white-space: nowrap;
+  transform: translateX(80%);
+  /* position: absolute;
+  left: 50vw; Adjust this value to push it further off-screen */
+ 
+}
+
+#page3 {
+  height: 100vh;
+  width: 99vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
